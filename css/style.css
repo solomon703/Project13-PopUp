@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+body{
+  background: linear-gradient(100deg ,silver , rgb(22, 147, 163) ,pink);
+}
+.container{
+  height: 100vh;  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border:none;
+}
+.container .Popup{
+  position: absolute;
+  height: 200px;
+  width: 400px;
+  top: 0%;
+  left: 50%;
+  background: #fff;
+  border-radius: 10px;
+  transform: translate(-50%,-50%) scale(0.1) ;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.open-PopUp{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+}
+.container .Popup img{
+  width: 100px;
+  margin-top: -40%;
+  margin-left: 40%;
+  border-radius: 50%;
+}
+.container .Popup h2{
+  margin-left: 40%;
+  font-size: 30px;
+  text-decoration: #34fd43;
+  color: black;
+}
+.container .Popup p{
+  margin-left: 20%;
+  margin-top: 20px;
+}
+.container .Popup button{
+  margin-left: 40%;
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  outline:none;
+  border:none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.container .Popup button:hover{
+  box-shadow: 5px 5px 30px black;
+}
+.container #submit{
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  outline: none;
+  border:none;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.container #submit:hover{
+  box-shadow: 5px 5px 20px black;
+  transform: scale(1.04);
+}
